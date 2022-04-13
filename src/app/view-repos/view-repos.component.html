@@ -20,24 +20,24 @@
       </ng-container>
   
       <ng-container matColumnDef="node_id">
-        <th mat-header-cell *matHeaderCellDef>id </th>
-        <td mat-cell *matCellDef="let element"> {{element.node_id}} </td>
+        <th mat-header-cell *matHeaderCellDef>Node id </th>
+        <td [routerLink]="['/viewsingle/',element.id]" mat-cell *matCellDef="let element"> {{element.node_id}} </td>
       </ng-container>
   
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        <td [routerLink]="['/viewsingle/',element.id]" mat-cell *matCellDef="let element"> {{element.name}} </td>
       </ng-container>
   
     
       <ng-container matColumnDef="full_name">
         <th mat-header-cell *matHeaderCellDef> Full Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.full_name}} </td>
+        <td [routerLink]="['/viewsingle/',element.id]" mat-cell *matCellDef="let element"> {{element.full_name}} </td>
       </ng-container>
   
      
       <ng-container matColumnDef="private">
-        <th mat-header-cell *matHeaderCellDef> private </th>
+        <th mat-header-cell *matHeaderCellDef> Private Status </th>
         <td [routerLink]="['/viewsingle/',element.id]" mat-cell *matCellDef="let element"> {{element.private}} </td>
       </ng-container>
   

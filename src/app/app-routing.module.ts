@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: '', component: AppComponent },
 
     {path: 'viewAll', component: ViewReposComponent },
-    {path: 'viewsingle', component: ViewSingleRepoComponent },
+    {path: 'viewsingle/:id', component: ViewSingleRepoComponent },
 
     {path: '**', component: AppComponent, pathMatch:'full' },
 ];
